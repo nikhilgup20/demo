@@ -25,7 +25,7 @@ public class DemoController{
 	DemoService demoService;
 	
 	//@GetMapping("/getDemo")
-	@RequestMapping(value = "/getDemo", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET,path = "/getDemo")
 	public String getDemo(){
 		System.out.println("Inside Demo method::");
 		return "Demo application";
