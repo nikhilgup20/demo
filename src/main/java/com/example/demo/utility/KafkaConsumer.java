@@ -7,9 +7,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class KafkaConsumer {
 	
-	@KafkaListener(topics = "demotopic",groupId = "test-consumer-group")
-	public void readMessage(@Payload String  message) {
-		System.out.println("Incoming Message::"+message);
-		
-	}
+	/*
+	 * @KafkaListener(topics = "demotopic",groupId = "test-consumer-group") public
+	 * void readMessage(@Payload String message) {
+	 * System.out.println("Incoming Message::"+message);
+	 * 
+	 * }
+	 */
 }
